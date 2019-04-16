@@ -12,7 +12,7 @@ class Bear extends Component {
     renderBear = () => {
         if ( this.props.bears )
             return  this.props.bears.map( (bear,index) =>
-                (<li key={index}> {bear.id}. {bear.name} {bear.weight} </li>)
+                (<li key={index} className="bullet-center"> {bear.id}. {bear.name} {bear.weight} </li>)
             )
     }
 
