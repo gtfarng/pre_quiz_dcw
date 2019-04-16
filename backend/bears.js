@@ -6,8 +6,7 @@ const bodyParser = require('body-parser')
 
 let bears = [{id: 1, name: 'Winnie', weight: 80},
     {id: 2, name: 'Pooh', weight: 90},
-    {id: 3, name: 'Duffy ', weight: 100}
-]
+    {id: 3, name: 'Duffy ', weight: 100}]
 
 app.use(cors())
 app.use('/api', bodyParser.json() ,router)
@@ -16,7 +15,6 @@ app.use('/api', bodyParser.urlencoded({extended:false}) ,router)
 router.route('/bears')
     .get( (req, res) =>  res.json(bears) )
 
-    // insert a new bear
     .post( (req, res)=> {
         var bear = {};
         bear.id =   bears[bears.length-1].id +1  ;
@@ -31,18 +29,18 @@ router.route('/bears/:bear_id')
     .get ( (req,res) => {
         let id = bears.findIndex( (bear) => bear.id === +req.params.bear_id)
         res.json(bears[id])
-    })  // get a bear
+    }) 
 
-    .put ( (req,res) => {                               // Update a bear
-        // var id = req.params.bear_id
+    .put ( (req,res) => {                            
+      
         let id = bears.findIndex( (bear) => bear.id === +req.params.bear_id)
         bears[id].name = req.body.name;
         bears[id].weight = req.body.weight;
         res.json({ message: 'Bear updated!' + req.params.bear_id});
     })
 
-    .delete ( (req,res) => {                   // Delete a bear
-        // delete     bears[req.params.bear_id]
+    .delete ( (req,res) => {                   
+
         bears = bears.filter( (bear) => bear.id !== +req.params.bear_id )
         res.json({ message: 'Bear deleted: ' + req.params.bear_id});
     })
