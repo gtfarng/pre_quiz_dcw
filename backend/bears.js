@@ -45,4 +45,4 @@ router.route('/bears/:bear_id')
         res.json({ message: 'Bear deleted: ' + req.params.bear_id});
     })
 
-app.listen(8000, () => console.log('server ready on port 8000\nhttp://localhost:8000/api/bears'))
+app.listen(8001, () => console.log('server ready on port 8001\nhttp://localhost:8001/api/bears'))
