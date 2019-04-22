@@ -1,0 +1,29 @@
+.app {
+    text-align: center;
+}
+li {
+    list-style-type: none;
+}
+#bt{
+    margin: 10px 10px 10px 10px;
+}
+.input-group{
+  display: block;
+  margin-left: 40%;
+  margin-right: 40%;
+}
+img {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 120px;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+img:hover {
+    transform: rotate(20deg);
+}
+table, th, td {
+    border: 1px solid white;
+  }
