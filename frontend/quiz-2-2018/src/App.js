@@ -4,7 +4,7 @@ import {Provider} from 'react-redux'
 import promise from 'redux-promise'
 import logger from 'redux-logger'
 import thunk from 'redux-thunk'
-import {createStore,combineReducers, applyMiddleware} from 'redux'
+import {createStore, combineReducers, applyMiddleware} from 'redux'
 
 import Count from './Count'
 //import reducers from './reducers'
