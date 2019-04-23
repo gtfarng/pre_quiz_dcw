@@ -1,0 +1,48 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.Space {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.container ul{
+  overflow: hidden;
+}
+
+.head{
+
+  text-decoration:underline;
+  font-size: 35px;
+  font-family:Georgia;
+  align:center;
+}
+.bullet
+{
+  text-align: center;
+  list-style-position: inside;
+}
