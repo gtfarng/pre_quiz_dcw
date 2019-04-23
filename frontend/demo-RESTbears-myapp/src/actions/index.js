@@ -6,7 +6,7 @@ export const GET_BEAR = 'get_bear';
 export const DELETE_BEAR = 'delete_bear';
 export const UPDATE_BEAR = 'update_bear';
 
-const ROOT_URL = 'http://localhost:8000/api/bears';
+const ROOT_URL = 'http://localhost:8001/api/bears';
 
 export function fetchBears() {
     const request = axios.get(ROOT_URL);
